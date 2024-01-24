@@ -1,11 +1,16 @@
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex fixed z-30 top-0 left-0 right-0">
         <div className="w-1/3 h-[70px] bg-black"> </div>
         <nav className="bg-black flex justify-end    items-center h-[70px] flex-grow">
           <div>
-            <button className="bg-green-400 flex gap-2 rounded py-2 px-5 mx-8 w-[max-content] text-white h-10">
+            <button
+              onClick={() => navigate("/contact")}
+              className="bg-green-400 flex gap-2 rounded py-2 px-5 mx-8 w-[max-content] text-white h-10"
+            >
               Contact me
               <svg
                 xmlns="http://www.w3.org/2000/svg"

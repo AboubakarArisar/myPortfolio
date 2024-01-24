@@ -3,10 +3,10 @@ import React from "react";
 const Cover = () => {
   return (
     <>
-      <div className="xsm:w-[100vw] md:w-[80vw] flex justify-center items-center xsm:px-3 md:pr-5 relative">
-        <div className="flex rounded-lg w-[100vw] z-10 mt-5 bg-[url('/cover.jpeg')]  justify-center items-center gap-2 p-5 bg-no-repeat bg-cover">
+      <div className="xsm:w-[100vw] md:w-[80vw] flex justify-center items-center xsm:px-3 md:pr-5  relative">
+        <div className="flex rounded-lg w-[100vw] z-10 mt-5  bg-[url('/cover.jpeg')] justify-center items-center gap-2 p-5 bg-no-repeat bg-cover">
           <div className="flex xsm:flex-col md:flex-row justify-center items-center py-5 content w-full gap-2">
-            <div className="rounded-full w-[120px] h-[120px] border-2 border-yellow-500 select-none">
+            <div className="rounded-full  w-[120px] h-[120px] border-2 border-yellow-500 select-none">
               <img
                 src="/abfinalpic.png"
                 alt=""

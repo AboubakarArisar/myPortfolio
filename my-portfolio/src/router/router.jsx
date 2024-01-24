@@ -1,24 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import PageNotFound from "./components/PageNotFound";
-import Footer from "../Components/Footer";
+import App from "../App";
+import Skills from "../Components/Skills";
+import Projects from "../Components/Projects";
+import PageNotFound from "../Components/PageNotFound";
+import Contact from "../Components/Contact";
 
-const AppRouter = () => {
+const RouterComponent = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/footer" component={Footer} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/projects" component={Projects} />
-        <Route path="*" component={PageNotFound} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/project" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </Router>
   );
 };
 
-export default AppRouter;
+export default RouterComponent;
